@@ -8,9 +8,6 @@
 
 int _printf(const char *format, ...);
 int (*check_specifier(char*))(va_list);
-unsigned int handl_buf(char *buf, char c, unsigned int ibuf);
-int print_str(va_list arguments, char *buf, unsigned int ibuf);
-int print_char(va_list arguments, char *buf, unsigned int ibuf);
 /**
  * struct func - struct for specifier to pointer
  * @t: character to compare
@@ -19,7 +16,7 @@ int print_char(va_list arguments, char *buf, unsigned int ibuf);
 typedef struct func
 {
 	char *t;
-	int (*f)(va_list, char *, unsigned int);
+	int (*f)(va_list);
 }func_t;
 
 #endif

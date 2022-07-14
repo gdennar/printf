@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_char - prints character
- * @ap: argument pointer
- * @params: the parameters struct
- *
- * Return: number chars printed
- */
+* print_char - prints character
+* @ap: argument pointer
+* @params: the parameters struct
+*
+* Return: number chars printed
+*/
 int print_char(va_list ap, params_t *params)
 {
 	char pad_char = ' ';
@@ -22,12 +22,12 @@ int print_char(va_list ap, params_t *params)
 }
 
 /**
- * print_int - prints integer
- * @ap: argument pointer
- * @params: the parameters struct
- *
- * Return: number chars printed
- */
+* print_int - prints integer
+* @ap: argument pointer
+* @params: the parameters struct
+*
+* Return: number chars printed
+*/
 int print_int(va_list ap, params_t *params)
 {
 	long l;
@@ -42,12 +42,12 @@ int print_int(va_list ap, params_t *params)
 }
 
 /**
- * print_string - prints string
- * @ap: argument pointer
- * @params: the parameters struct
- *
- * Return: number chars printed
- */
+* print_string - prints string
+* @ap: argument pointer
+* @params: the parameters struct
+*
+* Return: number chars printed
+*/
 int print_string(va_list ap, params_t *params)
 {
 	char *str = va_arg(ap, char *), pad_char = ' ';
@@ -84,12 +84,12 @@ int print_string(va_list ap, params_t *params)
 }
 
 /**
- * print_percent - prints string
- * @ap: argument pointer
- * @params: the parameters struct
- *
- * Return: number chars printed
- */
+* print_percent - prints string
+* @ap: argument pointer
+* @params: the parameters struct
+*
+* Return: number chars printed
+*/
 int print_percent(va_list ap, params_t *params)
 {
 	(void)ap;
@@ -98,12 +98,12 @@ int print_percent(va_list ap, params_t *params)
 }
 
 /**
- * print_S - custom format specifier
- * @ap: argument pointer
- * @params: the parameters struct
- *
- * Return: number chars printed
- */
+* print_S - custom format specifier
+* @ap: argument pointer
+* @params: the parameters struct
+*
+* Return: number chars printed
+*/
 int print_S(va_list ap, params_t *params)
 {
 	char *str = va_arg(ap, char *);

@@ -1,1 +1,1 @@
-README file for Golden and Tunji
+A printf project collaboration between Golden and Tunji
